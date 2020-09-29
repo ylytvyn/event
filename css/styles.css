@@ -1,6 +1,7 @@
 :root {
 	--font: 'Poppins', sans-serif;
 	--color-pink: #e71cb4;
+	--color-pinker: #c60ebe;
 	--color-grey: #444;
 }
 
@@ -123,7 +124,7 @@ body {
 }
 
 .about {
-	padding-top: 140px;
+	padding: 140px 0 155px;
 }
 
 .title {
@@ -143,4 +144,90 @@ body {
 	font-size: 36px;
 	font-weight: 700;
 	margin-bottom: 80px;
+}
+
+.about-list {
+	font-size: 24px;
+	line-height: 28px;
+	/* overflow: hidden; */
+	counter-reset: list;
+	columns: 2;
+}
+
+.about-list li {
+	/* width: 50%;
+	float: left; */
+	position: relative;
+	padding-left: 33.5%;
+	margin-bottom: 70px;
+}
+
+.about-list li::before {
+	content: '>';
+	font-size: 40px;
+	position: absolute;
+	left: 25px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.about-list li::after {
+	counter-increment: list;
+	content: '0' counter(list) '.';
+	font-size: 40px;
+	font-weight: 700;
+	position: absolute;
+	left: 18%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.about-list li:nth-child(5n + 1) {
+	color: #ffde16;
+}
+
+.about-list li:nth-child(5n + 2) {
+	color: #2eac66;
+}
+
+.about-list li:nth-child(5n + 3) {
+	color: #ffbd9e;
+}
+
+.about-list li:nth-child(5n + 4) {
+	color: #ff6179;
+}
+
+.about-list li:nth-child(5n + 5) {
+	color: #20c9e0;
+}
+
+.about-list li span {
+	color: var(--color-grey);
+}
+
+.about-info {
+	line-height: 40px;
+	margin-bottom: 70px;
+}
+
+.subscription .title-info {
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+.subscription .info-desc {
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+
+.download {
+	background: var(--color-pinker);
+	color: #fff;
+	text-decoration: none;
+	border-radius: 10px;
+	font-weight: 700;
+	padding: 20px 75px;
+	display: inline-block;
 }
