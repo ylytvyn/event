@@ -1,0 +1,146 @@
+:root {
+	--font: 'Poppins', sans-serif;
+	--color-pink: #e71cb4;
+	--color-grey: #444;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+/* Main Styles */
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font: 22px var(--font);
+	color: var(--color-grey);
+}
+
+.header {
+	height: 100vh;
+	background: url('../images/header.jpg') no-repeat top center;
+	background-size: cover;
+	padding-top: 1px;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 25px;
+}
+
+.logo {
+	font-weight: 700;
+	font-size: 34px;
+	color: #fff;
+	text-decoration: none;
+	transition: all .3s;
+}
+
+.logo:hover {
+	color: var(--color-pink);
+}
+
+.menu-list {
+	display: flex;
+}
+
+.menu-list li {
+	margin-left: 30px;
+}
+
+.menu-list a {
+	font-weight: 500;
+	font-size: 16px;
+	color: #fff;
+	text-decoration: none;
+	transition: all .3s;
+	border-bottom: 2px solid transparent;
+}
+
+.menu-list a:hover {
+	color: var(--color-pink);
+	border-bottom-color: var(--color-pink);
+}
+
+.slogan {
+	text-align: center;
+	color: #fff;
+	margin-top: 20vh;
+}
+
+.slogan h1 {
+	font-weight: 700;
+	font-size: 60px;
+	margin-bottom: 20px;
+}
+
+.slogan p {
+	font-size: 30px;
+	margin-bottom: 65px;
+}
+
+.slogan a {
+	color: inherit;
+	font-size: 16px;
+	font-weight: 500;
+	text-decoration: none;
+	border: 2px solid #ddd;
+	border-radius: 10px;
+	padding: 15px 20px;
+	transition: all .3s;
+}
+
+.slogan a:hover {
+	background: #ddd;
+	color: var(--color-pink);
+}
+
+.about {
+	padding-top: 140px;
+}
+
+.title {
+	font-size: 62px;
+	font-weight: 700;
+	color: var(--color-pink);
+	margin-bottom: 80px;
+}
+
+.description {
+	font-size: 32px;
+	line-height: 48px;
+	margin-bottom: 125px;
+}
+
+.subtitle {
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 80px;
+}
